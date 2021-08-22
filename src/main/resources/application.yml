@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc-secretsmanager:mysql://<rds-endpoint>:3306/aws
+    username: <secret-name>
+    driver-class-name: com.amazonaws.secretsmanager.sql.AWSSecretsManagerMySQLDriver
+  liquibase:
+    enabled: true
