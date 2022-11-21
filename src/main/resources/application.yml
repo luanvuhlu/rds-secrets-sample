@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc-secretsmanager:mysql://<rds-endpoint>:3306/aws
-    username: <secret-name>
+    url: jdbc-secretsmanager:mysql://<rds-endpoint>:3306/test?enabledTLSProtocols=TLSv1.2
+    username: test/sample
     driver-class-name: com.amazonaws.secretsmanager.sql.AWSSecretsManagerMySQLDriver
   liquibase:
     enabled: true
